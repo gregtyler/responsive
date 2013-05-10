@@ -1,0 +1,31 @@
+body { font-family: "Source Sans Pro"; font-size: 12px; }
+/*.thing:nth-child(4n+1) { padding: 0.5em 0; background-color: #EEE; }
+.thing:nth-child(4n), .thing:nth-child(4n+2), .thing:nth-child(4n+3) { padding: 0.5em 0; background-color: #FFF; }*/
+
+.comment.odd { padding: 0.5em 0; background-color: #EEE; }
+.comment.even { padding: 0.5em 0; background-color: #FFF; }
+
+.entry .buttons li a, .link .score { color: #777; }
+
+@media only screen and (max-width:1000px) {
+#header { height: auto; }
+#header-bottom-left:after { content:' ';display:block;clear:both; }
+#header-bottom-left .tabmenu { position: static; }
+#header-bottom-right {  position: static; top: 0 !important; padding: 4px !important; }
+#header-img { max-width: 160px; max-height: 120px; }
+.side { display: none; }
+body div.content {
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100%;
+}
+#siteTable, .commentarea {
+    margin: 0;
+    border: 0;
+    box-shadow: none;
+}
+#siteTable>div.thing:after { display: none; }
+#siteTable_promoted { display: none; }
+.commentarea { margin-top: 20px; }
+.comment { margin: 10px !important; }
+}

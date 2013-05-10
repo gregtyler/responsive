@@ -1,0 +1,32 @@
+#page.watch { padding-top: 0 !important; }
+#guide { display: none; }
+
+#watch7-playlist-data { padding-left: 0; width: auto; }
+.watch-medium .watch7-playlist-bar { width: auto !important; }
+
+#watch7-video, #player-api { width: 100% !important; max-width: 1000px !important; }
+
+#player-branded-banner { display: none; }
+
+#ytEd-side { display: block; padding: 10px; overflow-x: hidden; overflow-y: scroll; }
+#ytEd-side h2 { border-bottom: 1px solid #CCC; font-size: 1.5em; font-weight: normal; line-height: 1.5em; overflow: hidden; }
+#ytEd-comments { font-size: 10px; }
+#ytEd-commentsButton { display: block; text-align: center; padding: 0.5em; background-color: #DDF; }
+
+#player { padding-left: 0 !important; text-align: left !important; color: inherit !important; }
+
+/* BELOW! */
+#watch7-main-container { padding-left: 0 !important; }
+#watch7-content { width: 100% !important; }
+#watch7-sidebar { display: none; }
+
+/* BIG SCREENS */
+@media only screen and (min-width:1000px){
+    #watch7-video, #player-api { float: left; }
+    #ytEd-side { display: inline-block; }
+    #watch7-discussion { padding: 10px !important; }
+    #watch7-discussion h4 { margin: 0 !important; }
+    #comments-view .comment.child { margin-left: 30px !important; }
+    .comment-text { font-size: 11px !important; line-height: 15px !important; }
+    .comment-actions { display: none !important; }
+}

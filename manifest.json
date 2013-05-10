@@ -1,0 +1,20 @@
+{
+  "manifest_version": 2,
+
+  "name": "Responsive fixes",
+  "description": "Fixes some responsive problems on various sites",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["*://*.youtube.com/*","*://*.bbc.co.uk/iplayer/*","*://*.wikipedia.org/*","*://*.reddit.com/*"],
+      "js": ["background.js"],
+      /*"css": ["booty.css"],*/
+      "run_at": "document_start"
+    }
+  ],
+  
+  "web_accessible_resources": [
+    "youtube.css","reddit.css", "sourcesanspro.css"
+  ]
+}
